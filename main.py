@@ -2,7 +2,7 @@ from manager import *
 import gettext
 import os
 import readline
-from random import *
+# from random import *
 
 # pygettext.py -d base -o locales/base.pot src/main.py
 # msgfmt.py -o base.mo base
@@ -10,16 +10,14 @@ from random import *
 #VARIABLES
 ru = gettext.translation('base', localedir='locales', languages=['ru'])
 ru.install()
-_ = gettext.gettext
-# _ = ru.gettext
+# _ = gettext.gettext
+_ = ru.gettext
 
 running = True
 processManager = None
 processManagerMade = False
 
-languageLocalization = 'en'
-
-localizationDict = None
+languageLocalization = 'ru'
 
 class bcolors:
     HEADER = '\033[95m'
@@ -39,6 +37,11 @@ def helpinfo():
 
 def processManagerNotMade():
     print(_("You must create a ProcessManager first"))
+
+def remove():
+    pass
+    # processManager = Manager([], 0)
+    # processManagerMade = False
 
 def setLanguage():
     global _
@@ -187,7 +190,7 @@ def optimize():
 functions = {'help':helpinfo, 'info':info, 'setquant':setquant, 'fcfs':fcfs, 'sjf':sjf,
  'rrfcfs':rrfcfs, 'rrsjf':rrsjf, 'exit':exit, 'optimize':optimize, 'clear':clear, 'create':create,
  'saveconfig':saveConfig, 'loadconfig':loadConfig, 'add':add, 'edit':edit, 'configs':configs, 'readconfig':readConfig,
- 'priority' : priority, 'rrpriority': rrPriority, 'language' : setLanguage}
+ 'priority' : priority, 'rrpriority': rrPriority, 'language' : setLanguage, 'remove' : remove}
 
 clear()
 while running:
@@ -197,7 +200,6 @@ while running:
             functions['help']()
         else:
             functions[command.lower()]()
-        print(f'\n', end='')
     except (KeyboardInterrupt):
         print(_('Exiting programm'))
         exit()

@@ -14,12 +14,12 @@ _ = gettext.gettext
 class Manager():
 
 	processes = []
-	amount = None
+	amount = int
 	algorith = ""
-	runTime = None
-	waitTime = None
+	runTime = int
+	waitTime = int
 	totalTime = 0
-	quant = None
+	quant = int
 
 	def __init__(self, new_processes=[], amount = None, quant = 4):
 		self.amount = amount
@@ -28,7 +28,8 @@ class Manager():
 		elif (new_processes==[] and amount!=None):
 			for i in range(amount):
 				process = Process(i, randint(1, 15))
-				self.totalTime += process.runTime
+				# self.totalTime += process.runTime
+				self.totalTime = self.totalTime + process.runTime
 				self.processes.append(process)
 				self.amount = amount
 		else:
@@ -152,7 +153,7 @@ class Manager():
 	def optimizeQuantTime(self, algorith):
 		originalQuant = self.quant
 		minQuant = 1
-		maxQuant = self.getMaxRunTime()/2
+		maxQuant = int(self.getMaxRunTime()/2)
 		currentWaitTime = 10000000
 		if (algorith == 'fcfs'):
 			for i in range(1, maxQuant):
@@ -377,13 +378,13 @@ class Manager():
 
 class Process():
 
-	creationIndex = None
-	runTime = None
-	waitTime = None
-	executeTime = None
+	creationIndex = int
+	runTime = int
+	waitTime = int
+	executeTime = int
 	alreadyRan = 0
 	finished = False
-	priority = None
+	priority = int
 	maxTime = 15
 	minTime = 1
 
