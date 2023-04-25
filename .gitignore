@@ -1,4 +1,4 @@
 # Specify filepatterns you want git to ignore.
 *.csv
 __pycache__
-*.py1
+test.py

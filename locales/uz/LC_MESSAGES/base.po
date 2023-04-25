@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-04-08 11:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: main.py:33
+msgid ""
+"help - displays all commands\n"
+"info - outputs info of all the current processes\n"
+"create - create a process manager\n"
+"add - add a new process to ProcessManager\n"
+"setQuant - set the quant value\n"
+"fcfs - runs FCFS algorithm for ProcessManager\n"
+"sjf - runs SJF algorithm for ProcessManager\n"
+"rrFcfs - runs RR FCFS algorithm for ProcessManager\n"
+"rrSjf - runs RR SJF algorithm for ProcessManager\n"
+"exit - exits app\n"
+"clear - clear terminal\n"
+"edit - edit processes\n"
+"language - change language"
+msgstr ""
+"help - barcha buyruqlarni ko'rsatadi\n"
+"info - barcha joriy jarayonlar haqida ma'lumot chiqaradi\n"
+"create - jarayon menejerini yaratish\n"
+"add - jarayon menejeriga yangi jarayon qo'shish\n"
+"setQuant - kvant qiymatini o'rnating\n"
+"fcfs - jarayon menejeri uchun FCFS algoritm ishlaydi\n"
+"sjf - jarayoni menejeri uchun SJF algoritmi ishlaydi\n"
+"rrfcfs - jarayon menejeri uchun RR FCFS algoritm ishlaydi\n"
+"rrsjf - jarayoni menejeri uchun RR SJF algoritmi ishlaydi\n"
+"exir - chiqish"
+"clear - aniq terminal\n"
+"edit - jarayonlarni tahrirlash\n"
+"language - tilni o'zgartirish"
+
+#: main.py:36
+msgid "You must create a ProcessManager first"
+msgstr "Avval jarayon menejerini yaratishingiz kerak"
+
+#: main.py:40
+msgid "Enter preferred language(ru, en): "
+msgstr "Afzal tilni kiriting(ru, en): "
+
+#: main.py:55
+msgid "Enter amount of processes: "
+msgstr "Jarayonlar miqdorini kiriting: "
+
+#: main.py:56 main.py:66
+msgid "Enter value of quant: "
+msgstr "Kvant qiymatini kiriting: "
+
+msgid "Enter process priority: "
+msgstr "Jarayon ustuvorligini kiriting: "
+
+msgid "Cant find a process with that index"
+msgstr "Ushbu indeks bilan jarayonni topa olmayapman"
+
+#: main.py:130
+msgid "Enter config file name: "
+msgstr "Config fayl nomini kiriting: "
+
+#: main.py:142
+msgid "File not found"
+msgstr "Fayl topilmadi"
+
+#: main.py:145
+msgid "Enter process id: "
+msgstr "Jarayon identifikatorini kiriting: "
+
+#: main.py:146
+msgid "Enter CPU Burst: "
+msgstr "CPU portlash kiriting: "
+
+#: main.py:150
+msgid "Enter CPU Burst (leave empty for random): "
+msgstr "CPU Burrs kiriting (tasodifiy uchun bo'sh qoldiring): "
+
+#: main.py:151
+msgid "Enter process priority (leave empty for random): "
+msgstr "Jarayon ustuvorligini kiriting (tasodifiy uchun bo'sh qoldiring): "
+
+#: main.py:178
+msgid "Exiting programm"
+msgstr "Mavjud dasturlar"
+

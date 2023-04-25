@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-04-08 11:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: main.py:33
+msgid ""
+"help - displays all commands\n"
+"info - outputs info of all the current processes\n"
+"create - create a process manager\n"
+"add - add a new process to ProcessManager\n"
+"setQuant - set the quant value\n"
+"fcfs - runs FCFS algorithm for ProcessManager\n"
+"sjf - runs SJF algorithm for ProcessManager\n"
+"rrFcfs - runs RR FCFS algorithm for ProcessManager\n"
+"rrSjf - runs RR SJF algorithm for ProcessManager\n"
+"exit - exits app\n"
+"clear - clear terminal\n"
+"edit - edit processes\n"
+"language - change language"
+msgstr ""
+"help-muestra todos los comandos\n"
+"info-salidas de información de todos los procesos actuales\n"
+"create-crear un gestor de procesos\n"
+"add-añadir un nuevo proceso al Gestor de procesos\n"
+"set Quant-establecer el valor cuantitativo\n"
+"fcfs - ejecuta el algoritmo FCFS para el Gestor de procesos\n"
+"sjf - ejecuta el algoritmo SJF para el Gestor de procesos\n"
+"rrFcfs - ejecuta el algoritmo RR FCFS para el Gestor de procesos\n"
+"rrSjf - ejecuta el algoritmo RR SJF para el Gestor de procesos\n"
+"exit-aplicación de salidas\n"
+"terminal transparente - transparente\n"
+"editar - editar procesos\n"
+"idioma-cambiar idioma"
+
+#: main.py:36
+msgid "You must create a ProcessManager first"
+msgstr "Primero debe crear un ProcessManager" 
+
+#: main.py:40
+msgid "Enter preferred language(ru, en): "
+msgstr "Enter preferred language(ru, en): "
+
+#: main.py:55
+msgid "Enter amount of processes: "
+msgstr "Introduzca la cantidad de procesos:" 
+
+#: main.py:56 main.py:66
+msgid "Enter value of quant: "
+msgstr "Introduzca el valor de la cantidad: "
+
+msgid "Enter process priority: "
+msgstr "Ingrese la prioridad del proceso: " 
+
+msgid "Cant find a process with that index"
+msgstr "No se puede encontrar un proceso con ese índice"
+
+#: main.py:130
+msgid "Enter config file name: "
+msgstr "Introduzca el nombre del archivo de configuración: "
+
+#: main.py:142
+msgid "File not found"
+msgstr "Archivo no encontrado"
+
+#: main.py:145
+msgid "Enter process id: "
+msgstr "Introduzca el índice (número) del proceso: "
+
+#: main.py:146
+msgid "Enter CPU Burst: "
+msgstr "Introduzca el valor de CPU Burst: "
+
+#: main.py:150
+msgid "Enter CPU Burts (leave empty for random): "
+msgstr "Introduzca el valor de CPU Burst: " 
+#: main.py:151
+msgid "Enter process priority (leave empty for random): "
+msgstr "Ingrese el valor de prioridad del proceso (deje en blanco para el random): " 
+
+#: main.py:178
+msgid "Exiting programm"
+msgstr "Programas existentes"
+

@@ -9,7 +9,11 @@ import readline
 
 #VARIABLES
 ru = gettext.translation('base', localedir='locales', languages=['ru'])
+es = gettext.translation('base', localedir='locales', languages=['es'])
+uz = gettext.translation('base', localedir='locales', languages=['uz'])
+uz.install()
 ru.install()
+es.install()
 # _ = gettext.gettext
 _ = ru.gettext
 
@@ -17,7 +21,7 @@ running = True
 processManager = None
 processManagerMade = False
 
-languageLocalization = 'ru'
+# languageLocalization = 'ru'
 
 class bcolors:
     HEADER = '\033[95m'
@@ -48,6 +52,10 @@ def setLanguage():
     lc = input(_("Enter preferred language(ru, en): "))
     if (lc.lower()=='ru'):
         _ = ru.gettext
+    elif (lc.lower()=='es'):
+        _ = es.gettext
+    elif (lc.lower() == 'uz'):
+        _ = uz.gettext
     else:
         _ = gettext.gettext
 
